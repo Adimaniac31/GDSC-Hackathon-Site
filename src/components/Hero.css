@@ -1,0 +1,48 @@
+/* Default styles for desktop view */
+.hero-container {
+  display: flex;
+  flex-direction: column; /* Change to a column layout for mobile */
+  align-items: center;
+}
+
+.hero-div {
+  display: flex;
+}
+
+.hero-img {
+  flex: 1;
+  order: 1; /* Reorder the image to appear first */
+}
+
+.sticky-div {
+  flex: 1;
+  order: 2; /* Reorder the sticky-div to appear second */
+}
+
+.hero-content {
+  order: 3; /* Make sure hero-content always appears at the bottom */
+  width:50%;
+}
+
+/* Styles for mobile view */
+@media (max-width: 768px) {
+  .hero-div {
+    flex-direction: column; /* Change the direction for mobile view */
+  }
+  .hero-content{
+    width:100%;
+  }
+  .imgHero{
+    display: flex;
+    width:100%;
+    height:auto;
+  }
+}
+
+
+
+
+
+
+  
+  

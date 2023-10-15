@@ -1,0 +1,20 @@
+.Hero-Container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    position: relative; /* Add this line to create a positioning context for the sticky element */
+}
+
+.sticky-div {
+    position: sticky;
+    top: 0; /* Make it sticky at the top of the viewport */
+    align-self: flex-start; /* This aligns the sticky element to the top of the .Hero-Container */
+    width: 100%; /* This makes the sticky element take the full width of the .Hero-Container */
+    border:2px solid black;
+}
+
+@media (max-width: 768px) {
+    .Hero-Container {
+        flex-direction: column;
+    }
+}
