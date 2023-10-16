@@ -5,7 +5,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import "./TitleWithMenu.css";
-
+import image from "../assets/dev-oddesey.png"
 function TitleWithMenu() {
   const isMobile = useMediaQuery('(max-width:768px)');
   const [selectedOption, setSelectedOption] = useState(1); // Initially set to Option 1
@@ -17,10 +17,10 @@ function TitleWithMenu() {
   return (
     <Grid container direction="column" alignItems="center" spacing={2} className="Grid">
       <Grid item>
-        <img src="your-image-source" alt="Title Image" style={{ width: '50px', height: '50px' }} />
+        <img src={image} alt="Title Image" className='hackathon-image'/>
       </Grid>
       <Grid item>
-        <Typography variant="h6">Your Title</Typography>
+        <Typography variant="h3" fontFamily={"Nunito Sans"} fontWeight={700}>Dev Odyssey</Typography>
       </Grid>
       <Grid item>
         {isMobile ? (

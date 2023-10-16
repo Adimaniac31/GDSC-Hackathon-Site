@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import TitleWithMenu from './components/TitleWithMenu';
 import Hero from './components/HeroNew';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,16 +13,7 @@ function App() {
         <TitleWithMenu className="TitleWithMenu"/>
         <hr/>
         <Hero />
-        <NavBar />
-        <NavBar />
-        <NavBar />
-        <NavBar />
-        <NavBar />
-        <NavBar />
-        <NavBar />
-        <NavBar />
-        <NavBar />
-        <NavBar />     
+        <Footer />   
     </div>
   );
 }

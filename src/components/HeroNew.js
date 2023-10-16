@@ -9,36 +9,57 @@ import linkedin from "../assets/linkedin.webp";
 import Telegram from "../assets/Telegram.png";
 import Twitter from "../assets/twitter.png";
 import FAQ from './FAQ';
-
+import sponsorData from './SponsorData';
+import Sponsor from './Sponsor';
 
 const HeroNew = () => {
     return (
         <div className='Hero-Container'>
             <div className='content-div'>
                 <div className='hero-img'>
-                    <img src={require('../assets/hero.png')} alt="Hero" className='imgHero' />
+                    <img src={require('../assets/dev-oddesey.png')} alt="Hero" className='imgHero' />
                 </div>
                 <div className='hero-content'>
-                    <p>
-                        This year, CoinDCX is taking the excitement to unprecedented heights as we present the World’s Largest Multi-Chain Multi-Protocol Hackathon - Unfold 2023✨
-                    </p>
-                    <p>
-                        The ultimate platform where the Web3 community unites from all corners of India and beyond, both in-person and virtually, to facilitate collaboration, innovation, and knowledge sharing in the Web3 space. The canvas is yours, the possibilities are endless, and the future is waiting.
-                    </p>
-                    <p>What do we have in-store for you? 🎁</p>
+                    <h1>Dev Odyssey Hackathon: Igniting the AI Revolution</h1>
+
+                    <p>Are you ready to embark on a journey into the future of technology? Welcome to the Dev Odyssey Hackathon, where innovation, collaboration, and the spirit of adventure converge to explore the fascinating realm of Artificial Intelligence (AI). Our sub-topic for this exciting event is the "AI Revolution," a theme that promises to unlock endless possibilities and reshape the landscape of technology as we know it.</p>
+
+                    <p><strong>Event Overview:</strong></p>
+
+                    <p><strong>Unleashing the AI Revolution:</strong></p>
+                    <p>Artificial Intelligence has taken the world by storm, revolutionizing industries and changing the way we live, work, and communicate. Dev Odyssey Hackathon: AI Revolution is your opportunity to be a part of this transformative journey. Here, developers, data scientists, machine learning enthusiasts, and innovators from all backgrounds will come together to explore AI's frontiers and craft solutions that can shape the future.</p>
+
+                    <p><strong>Why AI Revolution Matters:</strong></p>
+                    <p>AI has left no sector untouched. From healthcare and finance to education and entertainment, the applications are limitless. The AI Revolution is driven by advancements in machine learning, neural networks, computer vision, and natural language processing, offering unprecedented potential for innovation.</p>
+
+                    <p>At the Dev Odyssey Hackathon, we want to encourage you to tackle the challenges and opportunities presented by AI in a constructive and creative way. Whether you are a seasoned AI expert or a curious newcomer, you'll find a place in our community to learn, share, and create.</p>
+
+                    <p><strong>What to Expect at Dev Odyssey Hackathon: AI Revolution:</strong></p>
                     <ul>
-                        <li>🌍 1000 Developers, Countless Possibilities!</li>
-                        <li>This year, CoinDCX is pushing boundaries like never before.</li>
-                        <li>With over 1000 developers converging from across the globe, prepare to be part of history in the making.</li>
-                        <li>Collaborate and exchange ideas with like-minded builders who share your passion for pioneering change.</li>
-                        <li>💡 Insights for Tomorrow</li>
-                        <li>Immerse yourself in riveting discussions, keynotes, and fireside chats with the industry’s most influential leaders, entrepreneurs, and disruptors.</li>
-                        <li>Network with people building and disrupting standards in the industry.</li>
-                        <li>Gain unparalleled insights into the realms of Web3 and explore the limitless potential of decentralized landscapes.</li>
-                        <li>🛠 Craft, Collaborate, Conquer</li>
-                        <li>Whether you're a coding maestro working solo or a dynamic team with a shared vision, seize the opportunity to build on the chain of your choice.</li>
-                        <li>With a treasure trove of $100k+ in bounties up for grabs, your ingenuity is your greatest asset.</li>
+                        <li><strong>Engaging Workshops:</strong> We have curated a series of workshops led by AI experts from various domains. They will provide you with the knowledge and tools necessary to tackle AI-related challenges.</li>
+                        <li><strong>Innovative Challenges:</strong> Our hackathon challenges are designed to push the boundaries of AI. From building recommendation systems to developing autonomous agents, you'll have the chance to work on exciting projects.</li>
+                        <li><strong>Collaborative Environment:</strong> Dev Odyssey emphasizes teamwork. You can join or form teams, collaborate with diverse skillsets, and learn from each other.</li>
+                        <li><strong>Mentorship:</strong> Seasoned mentors will be on hand to guide you through technical hurdles and provide insights into AI best practices.</li>
+                        <li><strong>Prizes and Recognition:</strong> Compete for exciting prizes and recognition for your accomplishments.</li>
+                        <li><strong>Networking:</strong> Build connections with fellow innovators, mentors, and potential employers.</li>
+                        <li><strong>Innovation Showcase:</strong> The top projects will be showcased in a dedicated event, where you can present your creations to a global audience.</li>
                     </ul>
+
+                    <p><strong>Who Should Attend:</strong></p>
+                    <ul>
+                        <li>Developers interested in AI and machine learning</li>
+                        <li>Data scientists and analysts</li>
+                        <li>Students and researchers</li>
+                        <li>Innovators and entrepreneurs</li>
+                        <li>AI enthusiasts and hobbyists</li>
+                    </ul>
+
+                    <p><strong>Join Us on this Odyssey:</strong></p>
+                    <p>Dev Odyssey Hackathon: AI Revolution promises to be an inspiring journey that will transform your understanding of AI, connect you with like-minded individuals, and provide you with the skills and insights to take your AI projects to the next level. The world is at the cusp of a technological transformation, and you can be a part of it.</p>
+
+                    <p>Don't miss this opportunity to ignite your passion for AI, embrace the AI Revolution, and make a difference in the world of technology. Join us at Dev Odyssey Hackathon, and let's embark on this exciting journey together.</p>
+
+                    <p>Are you ready to embark on the AI Odyssey? Register now and be part of the AI Revolution!</p>
                     <div className='Link-Content'>
                         <LinkDiv name="Email" Link="The Link" img={Email} />
                         <LinkDiv name="Website" Link="The Link" img={Website} />
@@ -48,6 +69,12 @@ const HeroNew = () => {
                         <LinkDiv name="Instagram" Link="The Link" img={insta} />
                     </div>
                     <FAQ />
+                    <div className="sponsor-list">
+                        <h1>Sponsors</h1>
+                        {sponsorData.map((sponsor) => (
+                            <Sponsor key={sponsor.id} image={sponsor.image} name={sponsor.name} />
+                        ))}
+                    </div>
                 </div>
             </div>
             <div className='sticky-div'>
@@ -57,7 +84,9 @@ const HeroNew = () => {
                     <h3 className='sticky-div-head'> Happening </h3>
                     <h2> Nagpur,India</h2>
                 </div>
-                <button className='btn'>Apply Now</button>
+                <a href="#">
+                    <button className='btn'>Apply Now</button>
+                </a>
             </div>
         </div>
     )

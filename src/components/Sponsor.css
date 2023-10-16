@@ -1,0 +1,42 @@
+/* sponsor.css */
+.sponsor-container {
+    background-color: rgb(228, 234, 235);
+    padding: 16px;
+    margin: 8px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sponsor-data{
+    background-color: white;
+    border-radius: 24px;
+    padding: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  
+  .sponsor-image {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+  }
+  
+  .sponsor-name {
+    margin-top: 8px;
+    font-weight: bold;
+  }
+
+  .sponsor-container {
+    /* Existing styles */
+    transform: scale(0);
+    transition: transform 1.5s ease;
+  }
+  
+  .sponsor-container.active {
+    transform: scale(1);
+  }
+  

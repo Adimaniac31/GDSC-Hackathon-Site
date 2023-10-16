@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 // import Button from '@mui/material/Button';
 import { useMediaQuery } from '@mui/material';
 import "./NavBar.css";
+import gdsc from "../assets/gdsc-logo.png";
 
 
 const NavBar = () => {
@@ -24,16 +25,16 @@ const NavBar = () => {
                 ) : (
                     null
                 )}
-                <img src="" alt="GDSC Logo" />
-                <Typography variant="h6" style={{ flexGrow: 1 }}>
+                <img src={gdsc} alt="GDSC Logo" className='gdsc-img' />
+                <Typography variant="h6" style={{ flexGrow: 1 }} fontFamily={"Nunito Sans"}>
                     GDSC
                 </Typography>
                 {!isMobile || isTypographyVisible ? (
                     <>
-                        <Typography variant="h6" style={{ flexGrow: 1 }} fontFamily={""}>
+                        <Typography variant="h6" style={{ flexGrow: 1 }} fontFamily={"Nunito Sans"}>
                             Home
                         </Typography>
-                        <Typography variant="h6" style={{ flexGrow: 1 }}>
+                        <Typography variant="h6" style={{ flexGrow: 1 }} fontFamily={"Nunito Sans"}>
                             Blog
                         </Typography>
                     </>

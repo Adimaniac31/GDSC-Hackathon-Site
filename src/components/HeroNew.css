@@ -80,6 +80,11 @@
     text-transform: uppercase;
 }
 
+.imgHero{
+    border-radius:18px;
+    max-height: 500px;
+}
+
 .Link-Content{
     display: flex;
     justify-content: center;
