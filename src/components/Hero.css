@@ -17,6 +17,8 @@
 .sticky-div {
   flex: 1;
   order: 2; /* Reorder the sticky-div to appear second */
+  position: sticky;
+  bottom: 0;
 }
 
 .hero-content {

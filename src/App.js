@@ -2,8 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
 import TitleWithMenu from './components/TitleWithMenu';
-import Hero from './components/Hero';
-import HeroNew from './components/HeroNew';
+import Hero from './components/HeroNew';
 
 function App() {
   return (
@@ -12,7 +11,7 @@ function App() {
         <hr/>
         <TitleWithMenu className="TitleWithMenu"/>
         <hr/>
-        <HeroNew />
+        <Hero />
         <NavBar />
         <NavBar />
         <NavBar />

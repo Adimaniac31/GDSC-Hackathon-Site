@@ -1,0 +1,25 @@
+.content{
+    background-color: white;
+    text-align:left;
+    padding: 24px;
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(3, 0, 92, 0.1) 0px 1px 4px;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    min-height: 40vh;
+    min-width:30vh;
+    background-color: rgb(245, 247, 247);
+    font-family: "Nunito Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:24px;
+    padding:8px;
+}
+
+.image{
+    max-width: 100px;
+    max-height: 100px;
+}
