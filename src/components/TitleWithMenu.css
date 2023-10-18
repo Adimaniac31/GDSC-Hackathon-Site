@@ -1,6 +1,6 @@
 .Grid{
     background-color: white;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: sans-serif;
     font-weight: 700;
 }
 
@@ -8,7 +8,7 @@
     border: 1px solid rgb(35, 104, 251);
     background-color: rgb(55, 112, 255);
     color:white;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: sans-serif;
     font-weight: 700;
     box-shadow: rgba(3, 0, 92, 0.1) 0px 1px 4px;
     border-radius: 8px;
@@ -28,7 +28,7 @@
     border: 1px solid rgb(35, 104, 251);
     background-color: rgb(55, 112, 255);
     color:white;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: sans-serif;
     font-weight: 700;
     box-shadow: rgba(3, 0, 92, 0.1) 0px 1px 4px;
     border-radius: 8px;

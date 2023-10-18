@@ -20,7 +20,7 @@ function TitleWithMenu() {
         <img src={image} alt="Title Image" className='hackathon-image'/>
       </Grid>
       <Grid item>
-        <Typography variant="h3" fontFamily={"Nunito Sans"} fontWeight={700}>Dev Odyssey</Typography>
+        <Typography variant="h3" fontFamily={"Sans Serif"} fontWeight={700}>Dev Odyssey</Typography>
       </Grid>
       <Grid item>
         {isMobile ? (

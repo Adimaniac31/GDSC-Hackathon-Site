@@ -31,10 +31,10 @@ const NavBar = () => {
                 </Typography>
                 {!isMobile || isTypographyVisible ? (
                     <>
-                        <Typography variant="h6" style={{ flexGrow: 1 }} fontFamily={"Nunito Sans"}>
+                        <Typography variant="h6" style={{ flexGrow: 1 }} fontFamily={"sans serif"}>
                             Home
                         </Typography>
-                        <Typography variant="h6" style={{ flexGrow: 1 }} fontFamily={"Nunito Sans"}>
+                        <Typography variant="h6" style={{ flexGrow: 1 }} fontFamily={"sans serif"}>
                             Blog
                         </Typography>
                     </>

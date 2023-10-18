@@ -5,7 +5,7 @@ const LinkDiv = (props) => {
     return (
         <div className='content' style={{ backgroundColor: "white" }}>
             <img src={props.img} className='image' />
-            <h1 style={{fontFamily:"Nunito Sans"}}>
+            <h1 style={{fontFamily:"sans serif"}}>
                 {props.name}
             </h1>
             <div className='link'>

@@ -30,13 +30,13 @@
     font-weight: bold;
   }
 
-  .sponsor-container {
-    /* Existing styles */
+  /*Animation styles*/
+  /* .sponsor-container {
     transform: scale(0);
     transition: transform 1.5s ease;
   }
   
   .sponsor-container.active {
     transform: scale(1);
-  }
+  }*/
   

@@ -5,7 +5,7 @@
     height: auto;
     position: relative; /* Add this line to create a positioning context for the sticky element */
     background-color: whitesmoke;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: sans-serif;
 }
 
 .content-div{
@@ -16,7 +16,7 @@
 }
 
 .hero-content{
-    font-family: Nunito Sans;
+    font-family: sans-serif;
     font-size: large;
     font-weight: 300;
     gap: 18px;
@@ -28,9 +28,9 @@
     width: 100%; /* This makes the sticky element take the full width of the .Hero-Container */
     background-color: white;
     margin-top:8px;
-    margin-left:24px;
-    margin-right:12%;
-    padding: 32px;
+    margin-left:0px;
+    margin-right:16%;
+    padding: 40px;
     background-color: rgb(255, 255, 255);
     border-radius: 16px;
     box-shadow: rgba(3, 0, 92, 0.12) 0px 1px 3px, rgba(3, 0, 92, 0.07) 0px 4px 11px;
@@ -52,7 +52,7 @@
     box-shadow: rgba(3, 0, 92, 0.1) 0px 1px 4px;
     background-color: rgb(55, 112, 255);
     color: rgb(255, 255, 255);
-    font-family: "Nunito Sans", sans-serif;
+    font-family: sans-serif;
     font-size: 20px;
     font-weight: 700;
     white-space: nowrap;
